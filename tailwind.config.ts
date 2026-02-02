@@ -9,14 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Wabisabi カラーパレット
-        wabi: {
-          stone: "#78716C",      // メインカラー（石灰）
-          charcoal: "#292524",   // ダークグレー（炭）
-          moss: "#44403C",       // 苔色
-          sand: "#E7E5E4",       // 砂色
-          paper: "#F5F5F4",      // 和紙色
-        },
+        // Wabisabi カラーパレット（コード内で使用しているカラー名）
+        "deep-black": "#1a1a1a",
+        "charcoal": "#2d2d2d",
+        "gold": "#c9a961",
+        "off-white": "#f5f5f0",
+        "beige": "#ede8df",
+        "moss": "#5a6b4a",
+        "stone": "#8a8580",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)", "sans-serif"],
