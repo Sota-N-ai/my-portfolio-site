@@ -1,6 +1,8 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme inline {
+:root {
   --color-deep-black: #1a1a1a;
   --color-charcoal: #2d2d2d;
   --color-gold: #c9a961;
@@ -8,7 +10,6 @@
   --color-beige: #ede8df;
   --color-moss: #5a6b4a;
   --color-stone: #8a8580;
-  --font-sans: var(--font-noto-serif-jp), "Hiragino Kaku Gothic Pro", sans-serif;
 }
 
 html {
@@ -16,7 +17,7 @@ html {
 }
 
 body {
-  background-color: #f5f5f0;
-  color: #1a1a1a;
-  font-family: var(--font-sans);
+  background-color: var(--color-off-white);
+  color: var(--color-deep-black);
+  font-family: var(--font-geist-sans), sans-serif;
 }
