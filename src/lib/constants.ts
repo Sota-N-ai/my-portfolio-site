@@ -49,6 +49,25 @@ export const MOTTOS: Motto[] = [
   },
 ];
 
+export const CHERISHED_WORDS = [
+  {
+    word: "好奇心には消費期限がある",
+    meaning: "今、やりたいと思ったことを大切に",
+  },
+  {
+    word: "侘び寂び",
+    meaning: "不完全さを受け入れ、その中に美しさを見出す",
+  },
+  {
+    word: "人生は自分より大切なものを見つける旅。それを見つけられたら幸せなんだ",
+    meaning: "",
+  },
+  {
+    word: "怒りの感情は相手に対する高い期待値から生まれる",
+    meaning: "期待値調整の大切さ",
+  },
+];
+
 export const DREAM = {
   title: "夢・ビジョン",
   vision:

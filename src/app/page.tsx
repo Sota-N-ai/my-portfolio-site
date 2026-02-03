@@ -2,7 +2,7 @@ import FadeIn from "@/components/FadeIn";
 import Image from "next/image";
 import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
-import { PROFILE, VALUES, MOTTOS, DREAM } from "@/lib/constants";
+import { PROFILE, CHERISHED_WORDS, MOTTOS } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -38,31 +38,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Values */}
+      {/* Cherished Words */}
       <section className="py-24 px-6 bg-beige">
         <div className="max-w-5xl mx-auto">
           <FadeIn className="text-center mb-16">
             <p className="text-gold text-xs tracking-widest uppercase mb-3">
-              Values
+              Cherished Words
             </p>
             <h2 className="text-2xl md:text-3xl font-light text-deep-black">
-              大切にすること
+              大切にしている言葉
             </h2>
           </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {VALUES.map((value, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {CHERISHED_WORDS.map((item, i) => (
               <FadeIn
                 key={i}
                 delay={i * 0.15}
                 className="bg-off-white p-8 border border-charcoal/10 hover:border-gold/40 transition-colors duration-300"
               >
-                <div className="text-3xl mb-4">{value.emoji}</div>
-                <h3 className="text-sm font-semibold text-deep-black mb-3 tracking-wide">
-                  {value.title}
-                </h3>
-                <p className="text-charcoal/60 text-xs leading-relaxed">
-                  {value.description}
+                <p className="text-deep-black text-base font-light leading-relaxed mb-3">
+                  「{item.word}」
                 </p>
+                {item.meaning && (
+                  <p className="text-charcoal/60 text-xs leading-relaxed">
+                    → {item.meaning}
+                  </p>
+                )}
               </FadeIn>
             ))}
           </div>
@@ -95,25 +96,6 @@ export default function Home() {
               </FadeIn>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Dream — 庭園の色 */}
-      <section className="relative py-24 px-6 bg-deep-black text-off-white overflow-hidden">
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-moss/15 blur-3xl rounded-full" />
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <FadeIn>
-            <p className="text-gold text-xs tracking-widest uppercase mb-3">
-              Dream
-            </p>
-            <h2 className="text-2xl md:text-3xl font-light mb-8">
-              {DREAM.title}
-            </h2>
-            <p className="text-off-white/70 text-base leading-relaxed max-w-2xl mx-auto mb-4">
-              {DREAM.vision}
-            </p>
-            <p className="text-gold/80 text-sm">{DREAM.goal}</p>
-          </FadeIn>
         </div>
       </section>
 
