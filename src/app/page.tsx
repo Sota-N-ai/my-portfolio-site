@@ -38,40 +38,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Cherished Words */}
-      <section className="py-24 px-6 bg-beige">
-        <div className="max-w-5xl mx-auto">
-          <FadeIn className="text-center mb-16">
-            <p className="text-gold text-xs tracking-widest uppercase mb-3">
-              Cherished Words
-            </p>
-            <h2 className="text-2xl md:text-3xl font-light text-deep-black">
-              大切にしている言葉
-            </h2>
-          </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {CHERISHED_WORDS.map((item, i) => (
-              <FadeIn
-                key={i}
-                delay={i * 0.15}
-                className="bg-off-white p-8 border border-charcoal/10 hover:border-gold/40 transition-colors duration-300"
-              >
-                <p className="text-deep-black text-base font-light leading-relaxed mb-3">
-                  「{item.word}」
-                </p>
-                {item.meaning && (
-                  <p className="text-charcoal/60 text-xs leading-relaxed">
-                    → {item.meaning}
-                  </p>
-                )}
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Mottos — 動かないもの */}
-      <section className="relative py-24 px-6 bg-off-white overflow-hidden">
+      <section className="relative py-24 px-6 bg-beige overflow-hidden">
         <div className="absolute top-12 right-8 w-40 h-40 rounded-full bg-stone/8 blur-sm" />
         <div className="absolute bottom-8 left-12 w-28 h-28 rounded-full bg-stone/6 blur-sm" />
         <div className="max-w-4xl mx-auto relative z-10">
@@ -93,6 +61,38 @@ export default function Home() {
                 <p className="text-charcoal text-base leading-relaxed">
                   「{motto.text}」
                 </p>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Cherished Words */}
+      <section className="py-24 px-6 bg-off-white">
+        <div className="max-w-5xl mx-auto">
+          <FadeIn className="text-center mb-16">
+            <p className="text-gold text-xs tracking-widest uppercase mb-3">
+              Cherished Words
+            </p>
+            <h2 className="text-2xl md:text-3xl font-light text-deep-black">
+              大切にしている言葉
+            </h2>
+          </FadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {CHERISHED_WORDS.map((item, i) => (
+              <FadeIn
+                key={i}
+                delay={i * 0.15}
+                className="bg-beige p-8 border border-charcoal/10 hover:border-gold/40 transition-colors duration-300"
+              >
+                <p className="text-deep-black text-base font-light leading-relaxed mb-3">
+                  「{item.word}」
+                </p>
+                {item.meaning && (
+                  <p className="text-charcoal/60 text-xs leading-relaxed">
+                    → {item.meaning}
+                  </p>
+                )}
               </FadeIn>
             ))}
           </div>

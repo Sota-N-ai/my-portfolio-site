@@ -270,7 +270,7 @@ export const CONTENTS: ContentItem[] = [
   {
     title: "note",
     description: "DX・AI・コミュニティに関する記事を書いています。",
-    url: "https://note.com/sota_n",
+    url: "https://note.com/sota_ndxlife08",
     icon: "note",
   },
   {
@@ -299,7 +299,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
     url: "https://instagram.com/narasou_dxai08",
     icon: "instagram",
   },
-  { name: "note", url: "https://note.com/sota_n", icon: "note" },
+  { name: "note", url: "https://note.com/sota_ndxlife08", icon: "note" },
   {
     name: "YouTube",
     url: "https://youtube.com/@sota.n_youtube",
